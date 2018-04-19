@@ -1,0 +1,116 @@
+NIEM JSON Specification
+
+Version 4.0alpha1pre1
+
+April 19, 2018
+
+NIEM Technical Architecture Committee (NTAC)
+
+Abstract
+
+   This document establishes methods and rules for using NIEM with JSON.
+
+Authors
+
+   Webb Roberts, Georgia Tech Research Institute (<webb.roberts@gtri.gatech.edu>), Lead Author
+
+Document Status
+
+   This document is a draft of a specification product of the NIEM Technical Architecture Committee (NTAC).
+
+   Updates, revisions, and errata for this specification are posted to https://github.com/NIEM/NIEM-JSON-Spec. Please submit comments on this specification as issues at https://github.com/NIEM/NIEM-JSON-Spec/issues.
+
+Table of Contents
+
+   The table of contents is omitted from this edition.
+
+1. Introduction
+
+   This document establishes methods and rules for using NIEM with JSON.
+
+2. Terminology
+
+   This document uses terminology from other specifications. This section enumerates this externally-defined terminology.
+
+2.1. IETF Best Current Practice 14 terminology
+
+   The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "NOT RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [BCP 14] [RFC 2119] [RFC 8174] when, and only when, they appear in all capitals, as shown here.
+
+2.2. Conformance Targets Attribute Specification
+
+   [CTAS] defines several terms used normatively within this specification.
+
+   The term conformance target is defined by [CTAS] Section 3.1, Conformance Target Defined which states:
+
+      A conformance target is a class of artifact, such as an interface, protocol, document, platform, process or service, that is the subject of conformance clauses and normative statements. There may be several conformance targets defined within a specification, and these targets may be diverse so as to reflect different aspects of a specification. For example, a protocol message and a protocol engine may be different conformance targets.
+
+   The term conformance target identifier is defined by [CTAS] Section 3.1, Conformance Target Defined, which states:
+
+      A conformance target identifier is an internationalized resource identifier that uniquely identifies a conformance target.
+
+   The term effective conformance target identifier is defined by [CTAS] Section 4, Semantics and Use, which states:
+
+      An effective conformance target identifier of a conformant document is an internationalized resource identifier reference that occurs in the document's effective conformance targets attribute.
+
+2.3. JSON
+
+2.4. JSON-LD
+
+   [JSON-LD] defines the term JSON-LD document at [JSON-LD] Section 7, Data Model.
+
+3. Conformance Targets
+
+3.1. JSON document
+
+   The conformance target JSON document uses code JSON.
+
+4. Conformance of a JSON document to a NIEM IEPD
+
+   A JSON document MAY be conformant to any number of NIEM IEPDs.
+
+4.1. Strict conformance to an IEPD
+
+   A JSON document is strictly conformant to an IEPD if and only if it contains only the content as described by an NIEM-conformant XML Schema set.
+
+4.2. Lax conformance to an IEPD
+
+   A JSON document is laxly conformant to an IEPD if and only if it contains the content required by an NIEM-conformant XML Schema set, and MAY include other content not specified by the NIEM-conformant XML Schema set.
+
+5. Rules
+
+Rule 5-1. File must be a JSON-LD file
+
+   [Rule 5-1] (JSON)
+
+      The file MUST be a JSON-LD file.
+
+Appendix A. References
+
+   [CTAS]: Roberts, Webb. "NIEM Conformance Targets Attribute Specification, Version 3.0." NIEM Technical Architecture Committee, July 31, 2014. http://reference.niem.gov/niem/specification/conformance-targets-attribute/3.0/NIEM-CTAS-3.0-2014-07-31.html.
+
+   [RFC8259]: Bray, T., Ed., "The JavaScript Object Notation (JSON) Data Interchange Format", STD 90, RFC 8259, DOI 10.17487/RFC8259, December 2017, https://www.rfc-editor.org/info/rfc8259.
+
+   [NIEM NDR]: Roberts, Webb. "National Information Exchange Model Naming and Design Rules, Version 4.0." NIEM Technical Architecture Committee, November 7, 2017. http://reference.niem.gov/niem/specification/naming-and-design-rules/4.0/niem-ndr-4.0.html.
+
+   [BCP 14]: Internet Engineering Task Force Best Current Practice 14. Available from https://www.ietf.org/rfc/bcp/bcp14.txt. BCP 14 is composed of:
+
+         [RFC 2119]: Bradner, S., "Key words for use in RFCs to Indicate Requirement Levels", BCP 14, RFC 2119, March 1997. Available from http://www.ietf.org/rfc/rfc2119.txt.
+
+         [RFC 8174]: Leiba, B., "Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words", BCP 14, RFC 8174, May 2017. Available from https://www.ietf.org/rfc/rfc8174.txt.
+
+   [JSON-LD]: Manu Sporny, Dave Longley, Gregg Kellogg, Markus Lanthaler, and Niklas Lindstrom. "JSON-LD 1.0, A JSON-Based Serialization for Linked Data, W3C Recommendation." Edited by Manu Sporny, Gregg Kellogg, and Markus Lanthaler. W3C, January 16, 2014. https://www.w3.org/TR/2014/REC-json-ld-20140116/.
+
+   [SHACL]: Holger Knublauch, and Dimitris Kontokostas. "Shapes Constraint Language (SHACL)." W3C, July 20, 2017. https://www.w3.org/TR/2017/REC-shacl-20170720/.
+
+Appendix B. Index
+
+   The index is omitted from this edition.
+
+Appendix C. Index of definitions
+
+   The index of definitions is omitted from this edition.
+
+Appendix D. Index of rules
+
+   Rule 5-1, File must be a JSON-LD file: Section 5, Rules
+
