@@ -23,8 +23,9 @@ that exchanges with NIEM-conformant vocabularies use those vocabularies
 properly; this allows data to be more flexible, and to combine terms from
 NIEM-conformant vocabularies with terms from other vocabularies.
 
-The latest pre-release draft of the NIEM JSON Specification is viewable at
-<https://rawgit.com/NIEM/NIEM-JSON-spec/dev-4.0/niem-json-spec.html>.
+See the NIEM JSON specification:
+- HTML version: [niem-json-spec.html](niem-json-spec.html).
+- Text version: [niem-json-spec.txt](niem-json-spec.txt).
 
 Please submit any comments as issues at
 <https://github.com/NIEM/NIEM-JSON-Spec/issues>.
